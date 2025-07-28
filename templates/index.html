@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findora</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">📍 Findora</h1>
+            <div class="search-section">
+                <div class="search-inputs">
+                    <input type="text" id="locationInput" placeholder="Enter location name or address" class="search-input">
+                    <div class="coordinates-inputs">
+                        <input type="number" id="latInput" placeholder="Latitude" class="coord-input" step="any">
+                        <input type="number" id="lngInput" placeholder="Longitude" class="coord-input" step="any">
+                    </div>
+                </div>
+                <div class="search-actions">
+                    <button id="geolocateBtn" class="btn btn-secondary" title="Use my location">
+                        📍 My Location
+                    </button>
+                    <button id="searchBtn" class="btn btn-primary">
+                        🔍 Search Services
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Service Categories -->
+    <nav class="categories-nav">
+        <div class="container">
+            <div class="categories-tabs">
+                <button class="category-tab active" data-category="Medical">
+                    🏥 Medical
+                </button>
+                <button class="category-tab" data-category="Security">
+                    👮 Security
+                </button>
+              
+                <button class="category-tab" data-category="Education">
+                    🎓 Education
+                </button>
+                
+                <button class="category-tab" data-category="Gas Stations">
+                    ⛽ Gas Stations
+                </button>
+                <button class="category-tab" data-category="Banks and Post Office">
+                    🏦 Banks & Post
+                </button>
+                <button class="category-tab" data-category="Temple">
+                    🛕 Temple
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Loading Indicator -->
+            <div id="loadingIndicator" class="loading-indicator hidden">
+                <div class="spinner"></div>
+                <p>Searching for services...</p>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- Map Section -->
+                <section class="map-section">
+                    <div class="section-header">
+                        <h2>Map View</h2>
+                        <div class="map-controls">
+                            <button id="centerMapBtn" class="btn btn-small" title="Center on search location">
+                                🎯 Center
+                            </button>
+                        </div>
+                    </div>
+                    <div id="map" class="map-container"></div>
+                </section>
+
+                <!-- Results Section -->
+                <section class="results-section">
+                    <div class="section-header">
+                        <h2>Nearby Services</h2>
+                        <div class="results-info">
+                            <span id="resultsCount" class="results-count">0 results</span>
+                            <select id="sortSelect" class="sort-select">
+                                <option value="distance">Sort by Distance</option>
+                                <option value="name">Sort by Name</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="resultsContainer" class="results-container">
+                        <div class="empty-state">
+                            <div class="empty-icon">🔍</div>
+                            <h3>No Results Yet</h3>
+                            <p>Enter a location and search for nearby services to get started.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

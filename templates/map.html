@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c0d3b70daa8ceabfac8d7a942f45fda4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c0d3b70daa8ceabfac8d7a942f45fda4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c0d3b70daa8ceabfac8d7a942f45fda4 = L.map(
+                "map_c0d3b70daa8ceabfac8d7a942f45fda4",
+                {
+                    center: [11.0544141, 78.0486074],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+
+            
+
+        
+    
+            var tile_layer_00a9138c9febd6d715738f23d287024d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_00a9138c9febd6d715738f23d287024d.addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+        
+    
+            var marker_cbde4e3b02c14598255d38421e888bdb = L.marker(
+                [11.0544141, 78.0486074],
+                {
+}
+            ).addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+        
+    
+            var icon_95a66b8d6b586394e5d498000f53dd67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e70f6acef3363b76fae2c602173979bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_463f3401809dce59441799f480688227 = $(`<div id="html_463f3401809dce59441799f480688227" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_e70f6acef3363b76fae2c602173979bf.setContent(html_463f3401809dce59441799f480688227);
+            
+        
+
+        marker_cbde4e3b02c14598255d38421e888bdb.bindPopup(popup_e70f6acef3363b76fae2c602173979bf)
+        ;
+
+        
+    
+    
+                marker_cbde4e3b02c14598255d38421e888bdb.setIcon(icon_95a66b8d6b586394e5d498000f53dd67);
+            
+    
+            var marker_719100eff4b03ecc5e1354ef9744f512 = L.marker(
+                [11.0904057, 78.0667287],
+                {
+}
+            ).addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+        
+    
+            var icon_dc08a9fd658d60dde1a36b8311a57ade = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64e3c7d46064fde41f7a88bb4fe1785f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09a7224b42ca42d346f260c0cafa0882 = $(`<div id="html_09a7224b42ca42d346f260c0cafa0882" style="width: 100.0%; height: 100.0%;">Unnamed Place - 4446.38 meters away</div>`)[0];
+                popup_64e3c7d46064fde41f7a88bb4fe1785f.setContent(html_09a7224b42ca42d346f260c0cafa0882);
+            
+        
+
+        marker_719100eff4b03ecc5e1354ef9744f512.bindPopup(popup_64e3c7d46064fde41f7a88bb4fe1785f)
+        ;
+
+        
+    
+    
+                marker_719100eff4b03ecc5e1354ef9744f512.setIcon(icon_dc08a9fd658d60dde1a36b8311a57ade);
+            
+    
+            var marker_e3ffdeca862e1bc80c28184142411050 = L.marker(
+                [10.9971306, 78.0743488],
+                {
+}
+            ).addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+        
+    
+            var icon_4990ddf4f878655024ea0ab1511bcdec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_805ab598668198a483547676f7c6eee0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dacc820fe979005c7b8e28dfdd10184d = $(`<div id="html_dacc820fe979005c7b8e28dfdd10184d" style="width: 100.0%; height: 100.0%;">Cheran Matriculation Higher Secondary School - 6932.74 meters away</div>`)[0];
+                popup_805ab598668198a483547676f7c6eee0.setContent(html_dacc820fe979005c7b8e28dfdd10184d);
+            
+        
+
+        marker_e3ffdeca862e1bc80c28184142411050.bindPopup(popup_805ab598668198a483547676f7c6eee0)
+        ;
+
+        
+    
+    
+                marker_e3ffdeca862e1bc80c28184142411050.setIcon(icon_4990ddf4f878655024ea0ab1511bcdec);
+            
+    
+            var marker_e5c6b042ab8813d0b4de0d043f8c89f3 = L.marker(
+                [11.1108714, 78.0052766],
+                {
+}
+            ).addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+        
+    
+            var icon_4bccf47528224717789b1668ebb3e1aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c56bbf93ea38ba0f056fe32555dbd6d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e755004838f4a7bbb92ec6ca7f9bf9ac = $(`<div id="html_e755004838f4a7bbb92ec6ca7f9bf9ac" style="width: 100.0%; height: 100.0%;">KKHSS - 7836.65 meters away</div>`)[0];
+                popup_c56bbf93ea38ba0f056fe32555dbd6d2.setContent(html_e755004838f4a7bbb92ec6ca7f9bf9ac);
+            
+        
+
+        marker_e5c6b042ab8813d0b4de0d043f8c89f3.bindPopup(popup_c56bbf93ea38ba0f056fe32555dbd6d2)
+        ;
+
+        
+    
+    
+                marker_e5c6b042ab8813d0b4de0d043f8c89f3.setIcon(icon_4bccf47528224717789b1668ebb3e1aa);
+            
+    
+            var marker_9825f62e89f0292e2e3a4d861b2e88e6 = L.marker(
+                [11.0101185, 77.9880089],
+                {
+}
+            ).addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+        
+    
+            var icon_c0bb024eff63a719aaad0c5b9cbafafa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18fd30e6788a24ffe16649d5b06a63aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38891194b5279a56783f60a3cd8d7231 = $(`<div id="html_38891194b5279a56783f60a3cd8d7231" style="width: 100.0%; height: 100.0%;">Unnamed Place - 8237.58 meters away</div>`)[0];
+                popup_18fd30e6788a24ffe16649d5b06a63aa.setContent(html_38891194b5279a56783f60a3cd8d7231);
+            
+        
+
+        marker_9825f62e89f0292e2e3a4d861b2e88e6.bindPopup(popup_18fd30e6788a24ffe16649d5b06a63aa)
+        ;
+
+        
+    
+    
+                marker_9825f62e89f0292e2e3a4d861b2e88e6.setIcon(icon_c0bb024eff63a719aaad0c5b9cbafafa);
+            
+    
+            var marker_a5d5e30a726578b079f02feeeb47f35a = L.marker(
+                [11.1287526, 78.0146456],
+                {
+}
+            ).addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+        
+    
+            var icon_440fab7808a7fd18cf9e4929f161a073 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e180cf6cb5a906573236be29b9c501a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22919fe576948943ce9abd611482ed93 = $(`<div id="html_22919fe576948943ce9abd611482ed93" style="width: 100.0%; height: 100.0%;">Kongu Matriculation Higher Secondary School - 9021.36 meters away</div>`)[0];
+                popup_e180cf6cb5a906573236be29b9c501a6.setContent(html_22919fe576948943ce9abd611482ed93);
+            
+        
+
+        marker_a5d5e30a726578b079f02feeeb47f35a.bindPopup(popup_e180cf6cb5a906573236be29b9c501a6)
+        ;
+
+        
+    
+    
+                marker_a5d5e30a726578b079f02feeeb47f35a.setIcon(icon_440fab7808a7fd18cf9e4929f161a073);
+            
+    
+            var marker_7a77a746693d177ddc2dd3117cd81228 = L.marker(
+                [11.1015041, 77.9705165],
+                {
+}
+            ).addTo(map_c0d3b70daa8ceabfac8d7a942f45fda4);
+        
+    
+            var icon_ec1237c82b3b7626f632e1fde98f9f67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7db1e02b096821a1ac96f852a7d6da56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_290b518bfe1807ba69447721d85284be = $(`<div id="html_290b518bfe1807ba69447721d85284be" style="width: 100.0%; height: 100.0%;">Primary school - 9996.47 meters away</div>`)[0];
+                popup_7db1e02b096821a1ac96f852a7d6da56.setContent(html_290b518bfe1807ba69447721d85284be);
+            
+        
+
+        marker_7a77a746693d177ddc2dd3117cd81228.bindPopup(popup_7db1e02b096821a1ac96f852a7d6da56)
+        ;
+
+        
+    
+    
+                marker_7a77a746693d177ddc2dd3117cd81228.setIcon(icon_ec1237c82b3b7626f632e1fde98f9f67);
+            
+</script>
+</html>
