@@ -135,4 +135,5 @@ def show_map():
     return render_template("map.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Railway assigns dynamic port
+    app.run(debug=False, host="0.0.0.0", port=port)
