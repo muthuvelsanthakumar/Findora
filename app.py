@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Use HTTP instead of HTTPS to avoid SSL errors
-OVERPASS_URL = "http://overpass-api.de/api/interpreter"
+OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 
 # Categories for places
 PLACE_CATEGORIES = {
